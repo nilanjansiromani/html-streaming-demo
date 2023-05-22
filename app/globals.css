@@ -68,3 +68,7 @@ footer {
   height: 400px;
   width: 400px;
 }
+
+#loader {
+  background-color: burlywood;
+}

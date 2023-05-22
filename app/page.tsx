@@ -2,15 +2,9 @@ import { Suspense } from "react";
 import Comments from "./Comments";
 import Price from "./Price";
 import ProductDescription from "./ProductDescription";
+import { Loader } from "./Loader";
 
-const fetchDescription = () =>
-  new Promise((resolve) =>
-    setTimeout(() => resolve("Product information ready for SEO"), 1500)
-  );
-
-export default async function Home() {
-  const description = (await fetchDescription()) as string;
-
+export default function Home() {
   return (
     <>
       <header>
@@ -27,19 +21,19 @@ export default async function Home() {
           alt=""
         />
       </div>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         {/* @ts-expect-error Async Server Component */}
         <ProductDescription />
       </Suspense>
 
       <h2>Comments</h2>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         {/* @ts-expect-error Async Server Component */}
         <Comments />
       </Suspense>
 
       <div id="atc">
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loader />}>
           {/* @ts-expect-error Async Server Component */}
           <Price />
         </Suspense>
