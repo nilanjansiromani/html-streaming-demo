@@ -71,4 +71,5 @@ footer {
 
 #loader {
   background-color: burlywood;
+  min-height: 50px;
 }
