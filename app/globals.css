@@ -26,7 +26,6 @@ footer {
   color: white;
   background-color: #0171dc;
   font-size: large;
-  
   border-radius: 10px;
   padding: 10px;
 }
@@ -36,11 +35,11 @@ footer {
   height: 32px;
   border-radius: 50px;
   font-size: x-large;
-  margin: auto;
 }
 
 #header-div {
   display: flex;
+  flex-direction: column;
 }
 
 #atc {
@@ -49,7 +48,9 @@ footer {
   width: 100%;
   background-color: antiquewhite;
   display: flex;
-  padding: 10px;
+  justify-content: space-between;
+  width: -webkit-fill-available;
+  margin-right: 5px;
 }
 #comments {
   display: flex;
@@ -59,7 +60,7 @@ footer {
   margin: 10px;
   padding: 5px;
 }
-#price{
+#price {
   font-size: xx-large;
 }
 
