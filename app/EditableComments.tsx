@@ -13,7 +13,9 @@ function EditableComments({
   return (
     <div>
       {comments.map((comment) => (
-        <li key={comment}>{comment}</li>
+        <div id="comments" key={comment}>
+          {comment}
+        </div>
       ))}
       <input
         type="text"

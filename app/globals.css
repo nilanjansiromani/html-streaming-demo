@@ -1,12 +1,60 @@
 body {
   font-family: sans-serif;
+  margin: 0;
 }
 
-header, footer {
-  background-color: darkblue;
+header {
+  background-color: #0171dc;
   color: #fff;
   padding: 10px;
   font-weight: bold;
   font-size: large;
-  margin: 1rem 0;
+  min-height: 72px;
+}
+footer {
+  background-color: #0171dc;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  font-size: large;
+}
+#buynow {
+  color: white;
+  background-color: #0171dc;
+  font-size: large;
+  
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#search {
+  width: 90%;
+  height: 32px;
+  border-radius: 50px;
+  font-size: x-large;
+  margin: auto;
+}
+
+#header-div {
+  display: flex;
+}
+
+#atc {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  padding: 10px;
+}
+#comments {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px;
+}
+#price{
+  font-size: xx-large;
 }

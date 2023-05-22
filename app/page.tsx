@@ -11,10 +11,16 @@ export default async function Home() {
 
   return (
     <>
-      <header>Header</header>
+      <header>
+        <div id="header-div">
+          <input type="text" id="search" />
+          <hr />
+          <p>how do you want your items</p>
+        </div>
+      </header>
 
-      <h2>Product Description</h2>  
-      <p>{description}</p>
+      <h1>Product Description</h1>
+      <h2>{description}</h2>
 
       <h2>Comments</h2>
       <Suspense fallback={<div>Loading...</div>}>
@@ -22,7 +28,10 @@ export default async function Home() {
         <Comments />
       </Suspense>
 
-      <footer>Footer</footer>
+      <div id="atc">
+          <span id="price">$75</span>
+          <span id="buynow">Add to cart</span>
+      </div>
     </>
   );
 }

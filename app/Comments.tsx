@@ -1,9 +1,8 @@
 import EditableComments from "./EditableComments";
+import { commentsContent } from "./commentsContent";
 
 const commentsFetch = () =>
-  new Promise((resolve) =>
-    setTimeout(() => resolve(["Comment 1", "Comment 2", "Comment 3"]), 6000)
-  );
+  new Promise((resolve) => setTimeout(() => resolve(commentsContent()), 2000));
 
 async function Comments() {
   const comments = (await commentsFetch()) as string[];
