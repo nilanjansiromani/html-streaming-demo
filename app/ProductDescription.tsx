@@ -10,11 +10,11 @@ const pdFetch = () =>
   );
 
 async function ProductDescription() {
-  const price = (await pdFetch()) as string[];
+  const productDescription = (await pdFetch()) as string[];
 
   return (
     <>
-      <p>{price}</p>
+      <p>{productDescription}</p>
     </>
   );
 }
