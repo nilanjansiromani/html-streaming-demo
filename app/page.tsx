@@ -21,22 +21,22 @@ export default function Home() {
           alt=""
         />
       </div>
-      <Suspense fallback={<Loader />}>
+      {/* <Suspense fallback={<Loader />}> */}
         {/* @ts-expect-error Async Server Component */}
         <ProductDescription />
-      </Suspense>
+      {/* </Suspense> */}
 
       <h2>Comments</h2>
-      <Suspense fallback={<Loader />}>
+      {/* <Suspense fallback={<Loader />}> */}
         {/* @ts-expect-error Async Server Component */}
         <Comments />
-      </Suspense>
+      {/* </Suspense> */}
 
       <div id="atc">
-        <Suspense fallback={<Loader />}>
+        {/* <Suspense fallback={<Loader />}> */}
           {/* @ts-expect-error Async Server Component */}
           <Price />
-        </Suspense>
+        {/* </Suspense> */}
         <span id="buynow">Add to cart</span>
       </div>
     </>
